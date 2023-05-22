@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>subway-passenger-counter</title>
+    <link rel="stylesheet" href="bootstrap_5/css/bootstrap.css">
+    <style>
+        body{
+            background-image: url("subway.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+        .main{
+            margin: auto;
+            width: 70%;
+            /* border: 1px black ridge; */
+            padding-top: 3%;
+            text-align: center;
+            color: darkred;
+            font-weight: bolder;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container" id="containerr">
+        <div class="center text-align-center">
+            <h1 class="text-danger">People Entered:</h1>
+            <div id="btn1" class="btn btn-primary" onclick="increment(+1)">INCREMENT</div>
+            <div id="btn2" class="btn btn-secondary" onclick="increment(-1)">DECREMENT</div>
+            <h1 id="count" class="text-warning">0</h1>
+            <div id="btn3" class="btn btn-success btn-md" onclick="save()">SAVE</div>
+            <div id="btn4" class="btn btn-danger btn-md" onclick="increment(0)">RESET</div>
+        </div>
+        <!-- save display -->
+            <p class="my-3 text-warning" style="font-weight: bolder;" id="save_el">Previous:  </p>
+        
+    </div>
+
+
+    <script src="counter.js"></script>
+</body>
+</html>
